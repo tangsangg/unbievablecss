@@ -1,2 +1,9 @@
 language: javascript
 script:true
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: 1d3e97ae173d06bd5d0ae455fcaa75d84d53979a  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
