@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>stacking-order</title>
+  <style>
+    .box{
+      position: relative;
+      width: 100000px;
+    }
+    .box > div{
+      width: 200px;
+      height: 200px;
+      color: #fff;
+      position: absolute;
+      opacity: .9;
+    }
+    .bg{
+      background-color: rgba(110, 10, 255, 1);
+      left: 0px;
+      top: 0px;
+    }
+    .negative-index{
+      background-color: rgba(10, 30, 122, 1);
+      left: 20px;
+      top: 20px;
+    }
+    .normal {
+      background-color: rgba(20, 30, 184, 1);
+      left: 40px;
+      top: 40px;
+    }
+    .position{
+      background-color: rgba(100, 30, 22, 1);
+      left: 60px;
+      top: 60px;
+      float: left;
+    }
+    .inline{
+      background-color: rgba(100, 111, 223, 1);
+      left: 80px;
+      top: 80px;
+      display: inline-block;
+    }
+    .z-index{
+      background-color: rgba(231, 1, 312, 1);
+      left: 100px;
+      top: 100px;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="bg">bg</div>
+    <div class="negative-index">negative-index</div>
+    <div class="normal">normal</div>
+    <div class="position">position</div>
+    <div class="z-index">z-index</div>
+    <div class="inline">inline</div>
+  </div>
+  
+</body>
+</html>

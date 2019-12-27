@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box {
+        width: 300px;
+        height: 200px;
+        background:#fff;
+        background-clip:padding-box;
+        border:20px dashed #cccc99;
+        position: relative;
+    }
+    div::after{
+      content:"";
+      position:absolute;
+      top:-20px;
+      left:-20px;
+      bottom:-20px;
+      right:-20px;
+      background:#996699;
+      z-index:-1;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
