@@ -1,0 +1,22 @@
+{
+  "ci": {
+    "collect": {
+      "startServerCommand": "rails server -e production",
+      "url": [
+        "http://localhost:3000/",
+        "http://localhost:3000/background-clip",
+        "http://localhost:3000/css-wave"
+      ]
+    },
+    "assert": {
+      "preset": "lighthouse:recommended",
+      "assertions": {
+        "offscreen-images": "off",
+        "uses-webp-images": "off"
+      }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}
