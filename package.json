@@ -1,0 +1,19 @@
+{
+  "name": "unbelievablecss",
+  "version": "1.0.0",
+  "description": "test lighthouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangsangg/unbievablecss.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tangsangg/unbievablecss/issues"
+  },
+  "homepage": "https://github.com/tangsangg/unbievablecss#readme"
+}
