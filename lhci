@@ -1,0 +1,4 @@
+lhci autorun --config=./lighthouserc.json
+lhci autorun --collect.numberOfRuns=3
+lhci autorun --upload.target=temporary-public-storage
+lhci autorun --collect.startServerCommand="rails server -e production"

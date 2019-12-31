@@ -14,9 +14,6 @@
         "offscreen-images": "off",
         "uses-webp-images": "off"
       }
-    },
-    "upload": {
-      "target": "temporary-public-storage"
     }
   }
 }
