@@ -1,0 +1,3 @@
+LHCI_TOKEN=59a9502ca1b007bf1018c7fb82314e243698dc7d lhci upload
+# is equivalent to...
+lhci upload --token=59a9502ca1b007bf1018c7fb82314e243698dc7d
